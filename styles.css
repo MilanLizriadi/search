@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+#search {
+  font-size: 1rem;
+  border-radius: 5px;
+  height: 2rem;
+  width: 30rem;
+}
+
+.search-label {
+  font-size: 1.5rem;
+}
+
+.user-cards {
+  display: block;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5rem;
+  width: 25rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  transition: 0.3s;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card .header {
+  font-weight: bold;
+}
+
+.card > .header {
+  margin-bottom: 0.25rem;
+}
+
+.card > .body {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
+}
